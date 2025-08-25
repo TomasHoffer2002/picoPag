@@ -1,71 +1,139 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Pico</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-</head>
-<body>
-    <h1>General Pico</h1>
-    <button class="btn btn-success" type="button">Btn primario</button>
-    <button class="btn btn-outline-secondary" type="button" style="border-color: green;">BtnSecundario</button>
-    <p>Este es un párrafo de ejemplo para mostrar el uso de Bootstrap en una página web.<br>
-       a medida que agreguemos contenido, el pie de pagina va a ir bajando. Pueden ser las tarjetas de<br>
-       los clubes y un ver mas dentro de la tarjeta para que mande a a la pagina del club seleccionado.
-    </p>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagina Pico</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/estiloIndex.css">
+    </head>
+    <body>
+        <header class="hero">
+            <img src="recursos/LogoGP.png" class="logo" alt="escudo de pico futbol">
+            <div class="container">
+                <h1 class="fw-bold">General Pico Deportes</h1>
+                <p class="lead">Clubes, pasión y comunidad</p>
+            </div>
+        </header>
 
-    <footer class="bg-dark text-light pt-4 mt-5 mt-auto">
-        <div class="container">
-            <div class="row">
-                <!-- Columna 1: Contacto -->
-                <div class="col-md-4 mb-3">
-                    <h5>Contacto</h5>
-                    <ul class="list-unstyled">
-                        <li>Email: ChinoUra80@gmail.com</li>
-                        <li>Tel: +54 9 295460-8171</li>
-                        <li>Dirección: Av. Siempre Viva 742</li>
-                    </ul>
-                </div>
-      
-                <!-- Columna 2: Enlaces -->
-                <div class="col-md-4 mb-3">
-                    <h5>Enlaces útiles</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-light text-decoration-none">Inicio</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Sobre nosotros</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Servicios</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Contacto</a></li>
-                    </ul>
+        <br><br><br>
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="recursos/picofutbol.png" class="card-img-top" alt="escudo de pico futbol">
+                        <div class="card-body">
+                            <h5 class="card-title">Pico Futbol Club</h5>
+                            <p class="card-text">Institución dedicada al fomento del deporte y la vida saludable, ofreciendo espacios de entrenamiento y competencias para todas las edades</p>
+                            <a href="pfc.html" target="_blank" class="btn btn-success">Ir a Pico Futbol</a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Columna 3: Redes -->
-                <div class="col-md-4 mb-3">
-                    <h5>Redes sociales</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <img src="recursos/facebook.svg" alt="Facebook" width="16" height="16" class="me-2">
-                            <a href="#" class="text-light text-decoration-none">Facebook</a>
-                        </li>
-                        <li>
-                            <img src="recursos/whatsapp.svg" alt="whatsapp" width="16" height="16" class="me-2">
-                            <a href="#" class="text-light text-decoration-none">Whatsapp</a>
-                        </li>
-                        <li>
-                            <img src="recursos/instagram.svg" alt="Instagram" width="16" height="16" class="me-2">
-                            <a href="#" class="text-light text-decoration-none">Instagram</a>
-                        </li>
-                    </ul>
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="recursos/independiente.png" class="card-img-top" alt="escudo independiente">
+                    <div class="card-body">
+                        <h5 class="card-title">Club Sportivo Independiente</h5>
+                        <p class="card-text">Club deportivo que reúne a atletas y vecinos en torno a distintas disciplinas, promoviendo valores de trabajo en equipo</p>
+                        <a href="independiente.html" target="_blank" class="btn btn-success">Ir a Independiente</a>
+                    </div>
                 </div>
             </div>
-    
-            <hr class="border-secondary">
-            <div class="text-center pb-3">
-                <small>&copy; 2025 General Pico Web. Todos los derechos reservados.</small>
+
+             <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="recursos/costa.png" class="card-img-top" alt="escudo costa brava">
+                    <div class="card-body">
+                        <h5 class="card-title">Costa Brava</h5>
+                        <p class="card-text">Entidad deportiva que impulsa la práctica de diversas actividades físicas, generando comunidad y desarrollo integral en cada socio y familias</p>
+                        <a href="costa.html" target="_blank" class="btn btn-success">Ir a Costa Brava</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+        <!-- segunda fila -->
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="recursos/atletico.png" class="card-img-top" alt="escudo atletico argentino">
+                    <div class="card-body">
+                        <h5 class="card-title">Club Atlético y Cultural Argentino</h5>
+                        <p class="card-text">Club comprometido con el deporte social y competitivo, brindando oportunidades de aprendizaje, entrenamiento y participación para todos</p>
+                        <a href="atletico.html" target="_blank" class="btn btn-success">Ir a Átletico Argentino</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="recursos/ferro.png" class="card-img-top" alt="escudo Ferro Carril Oeste">
+                    <div class="card-body">
+                        <h5 class="card-title">Ferro Carril Oeste</h5>
+                        <p class="card-text">Centro de deportes con infraestructura moderna, donde se combinan recreación, formación y competencia en un ambiente de respeto y compañerismo</p>
+                        <a href="ferro.html" target="_blank" class="btn btn-success">Ir a Ferro</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <br><br><br>
+
+        <footer class="bg-dark text-light pt-4 mt-5 mt-auto">
+            <div class="container">
+                <div class="row">
+                    <!-- Columna 1: Contacto -->
+                    <div class="col-md-4 mb-3">
+                        <h5>Contacto</h5>
+                        <ul class="list-unstyled">
+                            <li>Email: ChinoUra80@gmail.com</li>
+                            <li>Tel: +54 9 295460-8171</li>
+                            <li>Dirección: Av. Siempre Viva 742</li>
+                        </ul>
+                    </div>
+        
+                    <!-- Columna 2: Enlaces -->
+                    <div class="col-md-4 mb-3">
+                        <h5>Enlaces útiles</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-light text-decoration-none">Inicio</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">Sobre nosotros</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">Servicios</a></li>
+                            <li><a href="#" class="text-light text-decoration-none">Contacto</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Columna 3: Redes -->
+                    <div class="col-md-4 mb-3">
+                        <h5>Redes sociales</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <img src="recursos/facebook.svg" alt="Facebook" width="16" height="16" class="me-2">
+                                <a href="#" class="text-light text-decoration-none">Facebook</a>
+                            </li>
+                            <li>
+                                <img src="recursos/whatsapp.svg" alt="whatsapp" width="16" height="16" class="me-2">
+                                <a href="#" class="text-light text-decoration-none">Whatsapp</a>
+                            </li>
+                            <li>
+                                <img src="recursos/instagram.svg" alt="Instagram" width="16" height="16" class="me-2">
+                                <a href="#" class="text-light text-decoration-none">Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <hr class="border-secondary">
+                <div class="text-center pb-3">
+                    <small>&copy; 2025 General Pico Web. Todos los derechos reservados.</small>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>

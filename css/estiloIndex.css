@@ -1,0 +1,21 @@
+header.hero {
+  background: url('../recursos/nav.jpg') center/cover no-repeat;
+  height: 50vh;          /* ajusta según el efecto que quieras */
+  position: relative;
+  color: white;
+}
+
+header.hero .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente */
+  text-align: center;
+}
+
+header.hero .logo {
+  position: absolute;
+  top: 20px;   /* distancia desde arriba */
+  left: 20px;  /* distancia desde la izquierda */
+  width: 220px; /* tamaño del logo */
+}
