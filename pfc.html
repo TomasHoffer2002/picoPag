@@ -3,14 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pico Fútbol</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estiloClubes.css">
 </head>
 <body>
-    
+    <header>
+        <a href="index.html"><img src="recursos/LogoGP.png" alt="LogoGralPico" style="position: absolute; top: 20px; left: 20px; width: 220px; background-color:darkseagreen;"></a>
+    </header>
+    <div class="container">
+        <!-- Tabla de Contenidos -->
+        <div class="toc-sidebar">
+            <div class="toc-item">
+                <a href="#introduccion" class="active" data-section="introduccion">Introducción</a>
+            </div>
+            
+            <div class="toc-item">
+                <a href="#Historia" data-section="Historia">Historia</a>
+            </div>
+            
+            <div class="toc-item">
+                <a href="#Deportes" data-section="Deportes">Deportes</a>
+            </div>
+            
+            <div class="toc-item">
+                <a href="#Ubicación" data-section="Ubicación">Ubicación</a>
+            </div>
+            
+            <div class="toc-item">
+                <a href="#Contacto" data-section="Contacto">Contacto</a>
+            </div>
+        </div>
 
+        <div class="content">
+            <div id="introduccion" class="section active">
+                <span class="section-indicator">Sección 1 de 5</span>
+                <h2>Presentación</h2>
+                <div class="text-container">
+                    <p>Institución dedicada al fomento del deporte y la vida saludable, ofreciendo espacios de entrenamiento y competencias para todas las edades</p>
+                    <img src="recursos/PicoFutbolFrente.png" width="400" style="display: block; margin: 0 auto;">
+                </div>
+            </div>
 
+            <div id="Historia" class="section">
+                <span class="section-indicator">Sección 2 de 5</span>
+                <h2>Historia</h2>
+                <div class="text-container">
+                    <p>El 1 de abril de 1919, un grupo de jóvenes entusiastas del deporte y con un fuerte sentido de comunidad fundó Pico Football Club en la ciudad de General Pico, La Pampa. La institución nació con el propósito de fomentar la práctica del fútbol y generar un espacio de encuentro y crecimiento para la comunidad. Entre sus impulsores se destacaron Mario Rudoni, Eduardo Rolero, Gabriel Pedrerol y otros visionarios que sentaron las bases de lo que con el tiempo se convertiría en una institución emblema de la región.</p>
+                </div>
+            </div>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+            <div id="Deportes" class="section">
+                <span class="section-indicator">Sección 3 de 5</span>
+                <h2>🔧 Deportes</h2>
+                <div class="text-container">
+                    <p>Configura tu entorno de desarrollo con estos pasos:</p>
+                    <p>• Configura tus variables de entorno</p>
+                    <p>• Instala las extensiones recomendadas para VS Code</p>
+                    <p>• Configura Git con tu información de usuario</p>
+                    <p>• Verifica que todo funcione correctamente</p>
+                </div>
+            </div>
+
+            <div id="Ubicación" class="section">
+                <span class="section-indicator">Sección 4 de 5</span>
+                <h2>Ubicación</h2>
+                <div class="text-container">
+                    <p>Aquí tienes algunos Ubicación de código:</p>
+                    <p><strong>HTML:</strong> Estructura básica de una página web</p>
+                    <p><strong>CSS:</strong> Estilos modernos con Flexbox y Grid</p>
+                    <p><strong>JavaScript:</strong> Funciones interactivas para tu sitio</p>
+                    <p><strong>React:</strong> Componentes reutilizables para interfaces modernas</p>
+                </div>
+            </div>
+
+            <div id="Contacto" class="section">
+                <span class="section-indicator">Sección 5 de 5</span>
+                <h2>✅ Contacto</h2>
+                <div class="text-container">
+                    <p>Has completado la guía exitosamente. Ahora tienes:</p>
+                    <p>• Conocimientos sólidos de los fundamentos</p>
+                    <p>• Un entorno de desarrollo configurado</p>
+                    <p>• Ubicación para reference</p>
+                    <p>¡Felicidades! 🎉 Continúa practicando y explorando nuevas tecnologías.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Obtener todos los enlaces y secciones
+            const links = document.querySelectorAll('.toc-item a');
+            const sections = document.querySelectorAll('.section');
+            
+            // Función para cambiar de sección
+            function showSection(sectionId) {
+                // Ocultar todas las secciones
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                });
+                
+                // Mostrar la sección seleccionada
+                document.getElementById(sectionId).classList.add('active');
+                
+                // Actualizar enlace activo
+                links.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('data-section') === sectionId) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+            
+            // Agregar event listeners a los enlaces
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const sectionId = this.getAttribute('data-section');
+                    showSection(sectionId);
+                });
+            });
+            
+            // Efecto adicional al pasar el cursor
+            document.querySelectorAll('.toc-item').forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.02)';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
 </body>
 </html>
