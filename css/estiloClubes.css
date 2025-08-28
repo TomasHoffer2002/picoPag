@@ -238,23 +238,18 @@ header .logo {
 }
 
 .section-img {
-    /*position: absolute;
-    width: auto;
-    height: auto;
-    max-width: 70%;
-    max-height: 70%;
-    object-fit: contain;
-    border: 4px solid white;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    background-color: white;
-    padding: 5px;*/
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding: 20px;
     margin: 20px 0;
+}
+
+.contenedor-mapa {
+    display: flex;             /* Habilita Flexbox */
+    justify-content: center;   /* Centra horizontalmente el contenido */
+    align-items: center;       /* Centra verticalmente el contenido */
 }
 
 .img {
@@ -319,7 +314,7 @@ li {
 
 /* Contenedor de texto para mejor legibilidad */
 .text-container {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 1);
     padding: 25px;
     border-radius: 12px;
     /*margin-bottom: 0px;*/
