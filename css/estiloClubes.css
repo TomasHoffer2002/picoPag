@@ -8,7 +8,6 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #2c3e50;
-    background-image: url('../recursos/picofutbol.png');
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,6 +15,18 @@ body {
     background-color: #f0f8ff;
     min-height: 100vh;
     padding: 20px;
+}
+
+.fondo-ferro {
+    background-image: url('../recursos/ferro.png');
+}
+
+.fondo-pfc {
+    background-image: url('../recursos/picofutbol.png');
+}
+
+.fondo-costa {
+    background-image: url('../recursos/costa.png');
 }
 
 header {

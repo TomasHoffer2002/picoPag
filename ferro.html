@@ -3,13 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ferro</title>
+    <link rel="stylesheet" href="css/estiloClubes.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+
+<body class="fondo-ferro">
+    <header>
+        <a href="index.html"><img src="recursos/LogoGP.png" alt="LogoGralPico" class="logo"></a>
+    </header>
+    <div class="container">
+        <!-- Tabla de Contenidos -->
+        <div class="toc-sidebar">
+            <div class="toc-item">
+                <a href="#Introducción" class="active" data-section="Introducción">Introducción</a>
+            </div>
+
+            <div class="toc-item">
+                <a href="#Historia" data-section="Historia">Historia</a>
+            </div>
+
+            <div class="toc-item">
+                <a href="#Disciplinas" data-section="Disciplinas">Disciplinas Deportivas</a>
+            </div>
+
+            <div class="toc-item">
+                <a href="#Ubicación" data-section="Ubicación">Ubicación</a>
+            </div>
+
+            <div class="toc-item">
+                <a href="#Contacto" data-section="Contacto">Contacto</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="Introducción" class="section active">
+                <h2>Presentación</h2>
+                <div class="text-container">
+                    <p>El Club Atlético Ferro Carril Oeste es un club deportivo de General Pico,
+                        La Pampa. Fue fundado el 24 de junio de 1934.
+                        Entre sus logros se encuentra el haber participado en el Campeonato Nacional de 1984,
+                        además de ser el único equipo de la Provincia de La Pampa que jugó la primera categoría
+                        del fútbol argentino y en Primera B Nacional; lo hizo dos temporadas entre 1986 y 1988.</p>
+                </div>
+                <div class="section-img">
+                    <img src="recursos/cancha-ferro.webp" class="img">
+                </div>
+            </div>
+
+            <div id="Historia" class="section">
+                <h2>Historia</h2>
+                <div class="text-container">
+                    <p>Ferro fue fundado el 24 de junio de 1934 por un grupo de padres del colegio
+                        111 para crear un espacio deportivo destinado a los deportistas de la ciudad. Fomentado por el profesor Guillermo Coppo, fue fundado con el nombre de «Club Sportivo Costanero».
+                        Tras menos de un mes, se fusiona con el «Club Talleres», naciendo así el 
+                        «Club Atlético Ferro Carril Oeste», en honor al ramal del tren 
+                        (Ramal ferroviario General Pico-Telén) que pasaba por la ciudad.</p>
+                </div>
+            </div>
+
+            <div id="Disciplinas" class="section">
+                <h2>Disciplinas Deportivas</h2>
+                <div class="sports-gallery">
+                    <div class="sport-item">
+                        <div class="image-container">
+                            <img src="recursos/Basquet.webp" alt="Básquet">
+                        </div>
+                        <p class="sport-caption">Básquet</p>
+                    </div>
+
+                    <div class="sport-item">
+                        <div class="image-container">
+                            <img src="recursos/Futbol.jpg" alt="Fútbol">
+                        </div>
+                        <p class="sport-caption">Fútbol</p>
+                    </div>
+
+                    <div class="sport-item">
+                        <div class="image-container">
+                            <img src="recursos/Natacion.jpg" Natación">
+                        </div>
+                        <p class="sport-caption">Natación</p>
+                    </div>
+
+                    <div class="sport-item">
+                        <div class="image-container">
+                            <img src="recursos/Voley.webp" alt="Vóley">
+                        </div>
+                        <p class="sport-caption">Vóley</p>
+                    </div>
+
+                    <div class="sport-item">
+                        <div class="image-container">
+                            <img src="recursos/Hockey.jpg" alt="Hockey">
+                        </div>
+                        <p class="sport-caption">Hockey</p>
+                    </div>
+                </div>
+            </div>
+            <div id="Ubicación" class="section">
+            <h2>Ubicación</h2>
+            <div class="text-container">
+                <p>Ferro se encuentra en la calle 17 y 102 (o 17 y 104). </p>
+            </div>
+        </div>
+
+        <div id="Contacto" class="section">
+            <h2>✅ Contacto</h2>
+            <div class="text-container">
+                <p>Teléfono: 02302-436-072.</p>
+                <a href="https://www.instagram.com/ferrodelapampa/" target="_blank">Instagram de ferro.</a>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    </div>
     
 
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Obtener todos los enlaces y secciones
+            const links = document.querySelectorAll('.toc-item a');
+            const sections = document.querySelectorAll('.section');
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+            // Función para cambiar de sección
+            function showSection(sectionId) {
+                // Ocultar todas las secciones
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                // Mostrar la sección seleccionada
+                document.getElementById(sectionId).classList.add('active');
+
+                // Actualizar enlace activo
+                links.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('data-section') === sectionId) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            // Agregar event listeners a los enlaces
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const sectionId = this.getAttribute('data-section');
+                    showSection(sectionId);
+                });
+            });
+
+            // Efecto adicional al pasar el cursor
+            document.querySelectorAll('.toc-item').forEach(item => {
+                item.addEventListener('mouseenter', function () {
+                    this.style.transform = 'scale(1.02)';
+                });
+
+                item.addEventListener('mouseleave', function () {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
 </body>
 </html>
