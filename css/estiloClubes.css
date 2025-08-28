@@ -14,19 +14,88 @@ body {
     background-attachment: fixed;
     background-color: #f0f8ff;
     min-height: 100vh;
-    padding: 20px;
+    padding: 3%;
 }
 
 .fondo-ferro {
     background-image: url('../recursos/ferro.png');
+
+    .toc-item a.active {
+        background: #006618;
+        background: linear-gradient(135deg, rgba(0, 102, 24, 0.8) 20%, rgba(255, 255, 255, 0.8) 100%);
+        color: white;
+        border-left-color: #006618FF;
+    }
+
+    header .logo {
+        width: 180px;
+        background-color: rgba(0, 102, 24, 0.8);
+        border-radius: 20px 40px;
+        padding: 5px;
+        display: block;
+    }
+
+    .text-container {
+        border-left: 4px solid #006618FF;
+    }
+
+    h2 {
+        border-bottom: 2px solid #006618FF;
+    }
 }
 
 .fondo-pfc {
     background-image: url('../recursos/picofutbol.png');
+
+    .toc-item a.active {
+        background: #000000;
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 30%, rgba(255, 255, 255, 0.8) 100%);
+        color: white;
+        border-left-color: black;
+    }
+
+    header .logo {
+        width: 180px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 20px 40px;
+        padding: 5px;
+        display: block;
+    }
+
+    h2 {
+        border-bottom: 2px solid black;
+    }
+
+    .text-container {
+        border-left: 4px solid black;
+    }
 }
 
 .fondo-costa {
     background-image: url('../recursos/costa.png');
+
+    .toc-item a.active {
+        background: #FF0000;
+        background: linear-gradient(135deg, rgba(255, 0, 0, 0.8) 30%, rgba(255, 255, 255, 0.8) 100%);
+        color: white;
+        border-left-color: rgb(255, 0, 0);
+    }
+
+    header .logo {
+        width: 180px;
+        background-color: rgba(255, 0, 0, 0.8);
+        border-radius: 20px 40px;
+        padding: 5px;
+        display: block;
+    }
+
+    .text-container {
+        border-left: 4px solid rgb(255, 0, 0);
+    }
+
+    h2 {
+        border-bottom: 2px solid rgb(255, 0, 0);
+    }
 }
 
 .fondo-independiente {
@@ -34,13 +103,13 @@ body {
 }
 
 header {
-    position:absolute;
+    position: absolute;
     margin-bottom: 30px;
 }
 
 header .logo {
     width: 180px;
-    background-color: #CD8AE5;
+    background-color: #1da182;
     border-radius: 20px 40px;
     padding: 5px;
     display: block;
@@ -94,12 +163,6 @@ header .logo {
     cursor: pointer;
 }
 
-.toc-item a.active {
-    background: #CD8AE5;
-    color: white;
-    border-left-color: #b87bce;
-}
-
 .toc-item a:hover:not(.active) {
     background: rgba(226, 232, 240, 0.8);
     transform: translateX(5px);
@@ -148,8 +211,11 @@ header .logo {
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.6);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-height: 550px;
 }
-.section-img{
+
+.section-img {
+    /*position: absolute;
     width: auto;
     height: auto;
     max-width: 70%;
@@ -159,7 +225,25 @@ header .logo {
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     background-color: white;
-    padding: 5px;
+    padding: 5px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.img {
+    max-width: 100%;
+    max-height: 90vh; /* Máximo 60% del alto de la ventana */
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border: 3px solid white;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    background-color: white;
 }
 
 h2 {
@@ -169,7 +253,7 @@ h2 {
     color: #000000;
     text-align: center;
     padding-bottom: 10px;
-    border-bottom: 2px solid #b87bce;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
     text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.8);
 }
 
@@ -215,7 +299,7 @@ li {
     background: rgba(255, 255, 255, 0.4);
     padding: 25px;
     border-radius: 12px;
-    margin-bottom: 25px;
+    /*margin-bottom: 0px;*/
     border-left: 4px solid #b87bce;
     backdrop-filter: blur(5px);
 }
