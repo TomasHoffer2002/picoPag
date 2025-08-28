@@ -97,6 +97,33 @@ body {
         border-bottom: 2px solid rgb(255, 0, 0);
     }
 }
+.fondo-atletico {
+    background-image: url('../recursos/atletico.png');
+
+    .toc-item a.active {
+        background: #2904ad;
+        background: linear-gradient(135deg, rgba(6, 3, 180, 0.8) 30%, rgba(255, 255, 255, 0.8) 100%);
+        color: white;
+        border-left-color: rgb(42, 6, 206);
+    }
+
+    header .logo {
+        width: 180px;
+        background-color: rgba(6, 3, 180, 0.8);
+        border-radius: 20px 40px;
+        padding: 5px;
+        display: block;
+    }
+
+    .text-container {
+        border-left: 4px solid rgb(6, 3, 180, 0.8);
+    }
+
+    h2 {
+        border-bottom: 2px solid rgb(6, 3, 180, 0.8);
+    }
+    
+}
 
 .fondo-independiente {
     background-image: url('../recursos/independiente.png');
@@ -296,7 +323,7 @@ li {
 
 /* Contenedor de texto para mejor legibilidad */
 .text-container {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 1);
     padding: 25px;
     border-radius: 12px;
     /*margin-bottom: 0px;*/
