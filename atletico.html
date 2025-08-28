@@ -5,58 +5,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style>
-        html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    body {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
-        footer {
-        margin-top: auto;
-        width: 100%;
-    }
-    </style>
+    <link rel="stylesheet" href="css/estiloClubes.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--<style>
+        .container-fluid, footer, .row {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+    </style>-->
 </head>
-<body>
-    <header>
-        <div class="row" style="height: 100px; background-color: rgb(78, 177, 78);">
-            <div class="col-4" style="height: 100px;">
-                <a href="index.html"><img src="recursos/LogoGP.png" alt="LogoGralPico" style="height: 100%;"></a>
+<body style="margin: 0; padding: 0;">
+    <header class="bg-dark text-light" style="width: 100%; height: 100px;">
+        <div class="container-fluid">
+            <div class="row" style="height: 100px;">
+                <div class="col-4" style="height: 100px;">
+                    <a href="index.html"><img src="recursos/LogoGP.png" alt="LogoGralPico" style="height: 100%;"></a>
+                </div>
+                <div class="col-8 d-flex align-items-center" style="height: 100px;">
+                    <h1 style=" color: white;">Atlético General Pico</h1>
+                </div>
             </div>
-            <div class="col-8 d-flex align-items-center" style="height: 100px;">
-                <h1 style=" color: white;">Atlético General Pico</h1>
-            </div>
-        
         </div>
     </header>
-    <div class="container">   
-    </div>
-        <div class="toc-sidebar">
-            
+    <div class="container-fluid">
+        <!-- Tabla de Contenidos -->
+        <div class="row">  
+            <div class="col-md-3 toc-sidebar">
+                 <!-- ...sidebar... -->
+                <div class="toc-item">
+                    <a href="#Introducción" class="active" data-section="Introducción">Introducción</a>
+                </div>
+                
+                <div class="toc-item">
+                    <a href="#Historia" data-section="Historia">Historia</a>
+                </div>
+                
+                <div class="toc-item">
+                    <a href="#Disciplinas" data-section="Disciplinas">Disciplinas Deportivas</a>
+                </div>
+                
+                <div class="toc-item">
+                    <a href="#Ubicación" data-section="Ubicación">Ubicación</a>
+                </div>
+                <div class="toc-item">
+                    <a href="#Contacto" data-section="Contacto">Contacto</a>
+                </div>
+            </div>
+            <div class="col-md-9 content" style="margin-top: 100px;">
+            <!-- ...contenido principal... -->
+                <div class="content" style="text-align: center;">aaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    <div id="Introducción" class="section active">
+                        <h2>Presentación</h2>
+                        <div class="text-container">
+                            <p>:o</p>
+                        </div>
+                        <div class="section-img" style="text-align: center;">
+                            <img src="recursos/Club-Atlético-y-Cultural-Argentino-de-General-Pico.jpg" class="img" style="width: 100%;">
+                        </div>
+                    </div>
+
+                    <div id="Historia" class="section">
+                        <h2>Historia</h2>
+                        <div class="text-container">
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="Disciplinas" class="section">
+                        <h2>Disciplinas Deportivas</h2>
+                        <div class="sports-gallery">
+                            <div class="sport-item">
+                                <div class="image-container">
+                                    <img src="recursos/Basquet.webp" alt="Básquet">
+                                </div>
+                                <p class="sport-caption">Básquet</p>
+                            </div>
+                            <div class="sport-item">
+                                <div class="image-container">
+                                    <img src="recursos/Futbol.jpg" alt="Fútbol">
+                                </div>
+                                <p class="sport-caption">Fútbol</p>
+                            </div>
+
+                            <div class="sport-item">
+                                <div class="image-container">
+                                    <img src="recursos/Natacion.jpg" alt="Natación">
+                                </div>
+                                <p class="sport-caption">Natación</p>
+                            </div>
+                            <div class="sport-item">
+                                <div class="image-container">
+                                    <img src="recursos/Voley.webp" alt="Vóley">
+                                </div>
+                                <p class="sport-caption">Vóley</p>
+                            </div>
+                            <div class="sport-item">
+                                <div class="image-container">
+                                    <img src="recursos/Hockey.jpg" alt="Hockey">
+                                </div>
+                                <p class="sport-caption">Hockey</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Ubicación" class="section">
+                        <h2>Ubicación</h2>
+                        <div class="text-container">
+                            <p> General Pico</p>
+                            <p>Calle 32 Nº 750 - (6360) General Pico.</p>
+                        </div>
+                    </div>
+                    <div id="Contacto" class="section">
+                        <h2>✅ Contacto</h2>
+                        <div class="text-container">
+                            <p>Teléfono:</p>
+                            <p>12356465564</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 
+    <footer class="bg-dark text-light pt-4 mt-5 mt-auto" style="width: 100%;">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Columna 1: Contacto -->
+                <div class="col-md-4 mb-3">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: RusoOpa80@gmail.com</li>
+                        <li>Tel: +54 9 2923 65-7150</li>
+                        <li>Dirección: Av. Nunca Viva 742</li>
+                    </ul>
+                </div>
+    
+                <!-- Columna 2: Enlaces -->
+                <div class="col-md-4 mb-3">
+                    <h5>Enlaces útiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Inicio</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Sobre nosotros</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Servicios</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
 
-    <footer>
-        <div class="row d-flex align-items-center" style="background-color: rgb(78, 177, 78)">
-            <div class="col-4">
-                <a><img src="recursos/logo_100anio_pie.png" style="height: 250px;"></a>
+                <!-- Columna 3: Redes -->
+                <div class="col-md-4 mb-3">
+                    <h5>Redes sociales</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <img src="recursos/facebook.svg" alt="Facebook" width="16" height="16" class="me-2">
+                            <a href="#" class="text-light text-decoration-none">Facebook</a>
+                        </li>
+                        <li>
+                            <img src="recursos/whatsapp.svg" alt="whatsapp" width="16" height="16" class="me-2">
+                            <a href="#" class="text-light text-decoration-none">Whatsapp</a>
+                        </li>
+                        <li>
+                            <img src="recursos/instagram.svg" alt="Instagram" width="16" height="16" class="me-2">
+                            <a href="#" class="text-light text-decoration-none">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-4 text-center">
-                <p>&copy; 2023 Atlético General Pico. Todos los derechos reservados.</p>
-            </div>
-            <div class="col-4 justify-content-end">
-                Calle 1 Nro 1060 General Pico, La Pampa
-                <a href="mailto:info@ligapampeana.com.ar" target="_blank">info@ligapampeana.com.ar</a>
+    
+            <hr class="border-secondary">
+            <div class="text-center pb-3">
+                <small>&copy; 2025 General Pico Web. Todos los derechos reservados.</small>
             </div>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
