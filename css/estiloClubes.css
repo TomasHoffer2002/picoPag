@@ -99,7 +99,30 @@ body {
 }
 
 .fondo-independiente {
-    background-image: url('../recursos/independiente.png');
+    background-image: url('../recursos/logo-independiente.png');
+    
+    .toc-item a.active {
+        background: #FF0000;
+        background: linear-gradient(135deg, rgba(255, 0, 0, 0.8) 30%, rgba(255, 255, 255, 0.8) 100%);
+        color: white;
+        border-left-color: rgb(255, 0, 0);
+    }
+
+    header .logo {
+        width: 180px;
+        background-color: rgba(255, 0, 0, 0.8);
+        border-radius: 20px 40px;
+        padding: 5px;
+        display: block;
+    }
+
+    .text-container {
+        border-left: 4px solid rgb(255, 0, 0);
+    }
+
+    h2 {
+        border-bottom: 2px solid rgb(255, 0, 0);
+    }
 }
 
 header {
