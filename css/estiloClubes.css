@@ -29,6 +29,10 @@ body {
     background-image: url('../recursos/costa.png');
 }
 
+.fondo-independiente {
+    background-image: url('../recursos/independiente.png');
+}
+
 header {
     position:absolute;
     margin-bottom: 30px;
