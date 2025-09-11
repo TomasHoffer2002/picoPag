@@ -17,6 +17,11 @@ body {
     padding: 3%;
 }
 
+footer {
+    width: 100%;
+    margin-top: auto; /* Empuja el footer hacia abajo */
+}
+
 .fondo-ferro {
     background-image: url('../recursos/ferro.png');
 
@@ -172,9 +177,8 @@ header .logo {
     gap: 30px;
 }
 
-/* Estilos para la Tabla de Contenidos */
 .toc-sidebar {
-    position: sticky;
+    position:relative;
     top: 150px;
     width: 300px;
     height: fit-content;
@@ -184,7 +188,7 @@ header .logo {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.5);
-}
+}*/
 
 .toc-title {
     font-size: 1.5em;
